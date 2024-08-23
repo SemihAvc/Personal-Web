@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="semih.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="semihavcı.com"
+    />
+    <link rel="apple-touch-icon" href="semih.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&family=Inter:wght@400;500;600;700&family=Londrina+Solid&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Semih AVCI</title>
+    <script>
+      function applyDarkMode() {
+        var isDarkMode =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.classList.toggle("dark", !isDarkMode);
+      }
+      applyDarkMode();
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addListener(function (e) {
+          applyDarkMode();
+        });
+    </script>
+  </head>
+  <body class="bg-white dark:bg-black">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
